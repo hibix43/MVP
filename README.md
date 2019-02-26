@@ -15,8 +15,8 @@ MVP is multiple videos player.
 {
     data: {
         videos: [
-            { id: xxxxx, path: '/VIDEOS/aaa.mp4', position: 0 },
-            { id: yyyyy, path: '/VIDEOS/bbb.mp4', position: 1 },
+            { path: '/VIDEOS/aaa.mp4', position: 0 },
+            { path: '/VIDEOS/bbb.mp4', position: 1 },
         ],
     },
 }
