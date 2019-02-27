@@ -2,14 +2,15 @@ import { connect } from 'react-redux'
 import { loadVideo } from '../actions/index'
 import LoadForm from '../components/LoadForm'
 
-function mapStateToProps(state) {
-  return
+const mapStateToProps = state => {
+  return {}
 }
 
-function mapDispatchToProps(dispatch) {
+const mapDispatchToProps = dispatch => {
   return {
-    onClick(video) {
-      dispatch(loadVideo(video))
+    onLoadVideo: path => {
+      console.log(`loadVideoPath=${path}`)
+      dispatch(loadVideo(path))
     }
   }
 }
