@@ -3,8 +3,8 @@ import PropTypes from 'prop-types'
 
 let inputFile
 
-const LoadForm = () => (
-  <form onSubmit={ this.props.onClick(inputFile) }>
+const LoadForm = (onLoadClick) => (
+  <form onSubmit={() => onLoadClick(inputFile)}>
     <input type="file" size="30" ref={ input => {inputFile = input} } />
     <button type="submit">Load</button>
   </form>
