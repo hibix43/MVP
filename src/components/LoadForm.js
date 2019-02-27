@@ -1,17 +1,15 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-let inputFile
-
-const LoadForm = (onLoadClick) => (
-  <form onSubmit={() => onLoadClick(inputFile)}>
-    <input type="file" size="30" ref={ input => {inputFile = input} } />
-    <button type="submit">Load</button>
-  </form>
+const LoadForm = props => (
+  <input type="file" onChange={e =>
+    props.onLoadVideo(e.target.files[0].path)} />
 )
 
 LoadForm.propTypes = {
-  onClick: PropTypes.func.isRequired
+  props: PropTypes.shape({
+    onLoadVideo: PropTypes.func.isRequired
+  })
 }
 
 export default LoadForm
