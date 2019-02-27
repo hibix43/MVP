@@ -6,8 +6,8 @@ function videos(state = [], action) {
       return [
         ...state,
         {
-          file: action.file,
-          position: state.length
+          path: action.path,
+          // position: state.length
         }
       ]
     default:
