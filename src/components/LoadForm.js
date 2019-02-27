@@ -1,9 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const LoadForm = props => (
+const LoadForm = ({ onLoadVideo }) => (
   <input type="file" onChange={e =>
-    props.onLoadVideo(e.target.files[0].path)} />
+    onLoadVideo(e.target.files[0].path)} />
 )
 
 LoadForm.propTypes = {
