@@ -12,7 +12,7 @@ const VideosListView = ({ videos }) => (
   <FlexVideos>
     {
       videos.map((video, index) => (
-        <Video key={index} path={video.path} />
+        <Video key={index} path={video.path} videosLength={videos.length} />
       ))
     }
   </FlexVideos>
