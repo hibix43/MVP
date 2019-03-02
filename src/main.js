@@ -5,7 +5,7 @@ const url = require('url')
 let win
 
 function createWindow () {
-  win = new BrowserWindow({ width: 1024, height: 768 })
+  win = new BrowserWindow({ width: 2560, height: 1024, useContentSize: true })
   // build version
   const startUrl = process.env.ELECTRON_START_URL || url.format({
                 pathname: path.join(__dirname, '../build/index.html'),
