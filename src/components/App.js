@@ -1,10 +1,13 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
+import LoadVideo from '../containers/LoadVideo'
+import VideoList from '../containers/VideosList'
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1>Hello</h1>
+        <LoadVideo />
+        <VideoList />
       </div>
     );
   }

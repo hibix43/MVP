@@ -13,12 +13,10 @@ MVP is multiple videos player.
 
 ```javascript
 {
-    data: {
-        videos: [
-            { id: xxxxx, path: '/VIDEOS/aaa.mp4', position: 0 },
-            { id: yyyyy, path: '/VIDEOS/bbb.mp4', position: 1 },
-        ],
-    },
+    data: [
+        { path: '/VIDEOS/aaa.mp4' },
+        { path: '/VIDEOS/bbb.mp4' },
+    ],
 }
 ```
 
@@ -38,9 +36,10 @@ MVP is multiple videos player.
     │   ├── App.js
     │   ├── LoadForm.js
     │   ├── Videos.js
-    │   └── VidosList.js
+    │   └── VidosListView.js
     ├── containers
-    │   └── LoadVideo.js
+    │   ├── LoadVideo.js
+    │   └── VideosList.js
     ├── index.js
     ├── main.js
     └── reducers
